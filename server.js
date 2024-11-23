@@ -3,7 +3,7 @@ const cors = require("cors");
 const { json } = require("body-parser");
 
 const corsOptions = {
-    origin: 'http://localhost:5050',
+    origin: '*',
     optionsSuccessStatus: 200
   };
 app=express();
