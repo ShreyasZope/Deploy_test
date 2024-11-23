@@ -5,7 +5,7 @@ const client = new Client();
 client.setProject('67419b4900287acdc7f2');
 
 const corsOptions = {
-    origin: 'https://shreyaszope.github.io',
+    origin: '*',
     optionsSuccessStatus: 200
   };
 app=express();
