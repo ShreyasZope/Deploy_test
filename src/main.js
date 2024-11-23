@@ -1,5 +1,15 @@
 import { Client, Users } from 'node-appwrite';
+const express= require("express");
+const cors = require("cors");
+const { json } = require("body-parser");
 
+const corsOptions = {
+    origin: 'https://shreyaszope.github.io',
+    optionsSuccessStatus: 200
+  };
+app=express();
+app.use(json());
+app.use(cors(corsOptions));
 // This Appwrite function will be executed every time your function is triggered
 export default async ({ req, res, log, error }) => {
   // You can use the Appwrite SDK to interact with other services
